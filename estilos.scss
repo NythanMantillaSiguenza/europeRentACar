@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap');
+// inicio generales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(243, 237, 237);
+}
+// fin generales
+// inicio header
+header{
+    width: 100%;
+    min-height: 70px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 8px 0 rgb(179, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .logo img{
+        height: 150px;
+        padding: 5px;
+    }
+    .barra{
+        float: right;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+    nav a{
+        color: rgb(51, 51, 51);
+        font-family: 'Roboto', sans-serif;
+    }
+    nav a:hover{
+        color: rgb(224, 35, 35);
+    }
+}
+// fin header
+// inicio footer
+footer{
+    background-color: rgb(44, 44, 54);
+    min-height: 120px;
+    margin-top: 100px;
+    p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: rgb(196, 188, 188);
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .redes{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 15px;
+    }
+    .redes a i{
+        text-decoration: none;
+        color: rgb(206, 200, 200);
+    }
+    .redes a i:hover{
+        color: #ff0000;
+    }
+    .footer_contacto{
+        text-align: center;
+    }
+}
+// fin footer
+// inicio de nosotros
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 40px;
+    .nosotros_intro{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
+    }
+    .nosotros_intro h2{
+        padding: 10px;
+        letter-spacing: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+    }
+    .nosotros_intro p{
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.875;
+        color: rgb(0, 0, 0);
+        margin: 20px;
+    }
+    .nosotros_intro img{
+        width: 60%;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+}
+// fin del inicio
+// inicio de servicios
+#servicios{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 40px;
+    .servicios_lista{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
+        text-align: center;
+        h2{
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 4px;
+            line-height: 1.5;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-position: inside;
+            text-align: start;
+            padding-inline-start: 30px;
+        }
+        li{
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 2px;
+            line-height: 1.875;
+            margin: 5px;
+        }
+        img{
+            width: 85%;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+    }
+}
+// fin servicios
+// inicio contacto
+#contacto{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 50px;
+    align-items: center;
+    .contacto_1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+        width: 70%;
+        border: 2px solid rgba(0, 0, 0, 0.715);
+        border-radius: 5%;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.875;
+        a{
+            padding-right: 15px;
+            padding-left: 15px;
+            color: black;
+            font-size: 25px;
+        }
+        a :hover{
+            color: #ff0000;
+        }
+    }
+    .contacto_2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+        width: 70%;
+        border: 2px solid rgba(0, 0, 0, 0.715);
+        border-radius: 5%;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.875;
+        a{
+            padding-right: 15px;
+            padding-left: 15px;
+            color: black;
+            font-size: 25px;
+        }
+        a :hover{
+            color: #ff0000;
+        }
+    }
+    .contacto_3{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+        width: 70%;
+        border: 2px solid rgba(0, 0, 0, 0.715);
+        border-radius: 5%;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.875;
+        a{
+            padding-right: 15px;
+            padding-left: 15px;
+            color: black;
+            font-size: 25px;
+        }
+        a :hover{
+            color: #ff0000;
+        }
+    }
+}

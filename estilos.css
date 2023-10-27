@@ -52,9 +52,9 @@ footer p {
   padding-top: 10px;
   padding-bottom: 10px;
   color: rgb(196, 188, 188);
-  text-align: center;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 footer .redes {
   text-align: center;
@@ -69,12 +69,23 @@ footer .redes a i:hover {
   color: #ff0000;
 }
 footer .footer_contacto {
+  padding-top: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+footer .footer_contacto p #text {
+  justify-content: space-between;
 }
 
 #nosotros {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
   margin: 20px;
   margin-top: 40px;
 }
@@ -84,9 +95,11 @@ footer .footer_contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
   box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
 }
 #nosotros .nosotros_intro h2 {
+  margin-top: 40px;
   padding: 10px;
   letter-spacing: 4px;
   text-align: center;
@@ -99,27 +112,35 @@ footer .footer_contacto {
   font-family: "Roboto", sans-serif;
   line-height: 1.875;
   color: rgb(0, 0, 0);
+  max-width: 750px;
   margin: 20px;
 }
 #nosotros .nosotros_intro img {
-  width: 85%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  max-width: 35%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 #servicios {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
   margin: 20px;
   margin-top: 40px;
 }
 #servicios .servicios_lista {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
   text-align: center;
 }
 #servicios .servicios_lista h2 {
+  margin-top: 40px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 4px;
@@ -136,18 +157,24 @@ footer .footer_contacto {
 #servicios .servicios_lista ul {
   list-style-position: inside;
   text-align: start;
+  float: inline-start;
   padding-inline-start: 30px;
 }
 #servicios .servicios_lista li {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  min-width: 960px;
+  letter-spacing: 1.5px;
   line-height: 1.875;
+  padding: 0 15px 0 15px;
   margin: 5px;
 }
+#servicios .servicios_lista #last_li {
+  margin-bottom: 40px;
+}
 #servicios .servicios_lista img {
-  width: 85%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  width: 35%;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 #contacto {
@@ -164,7 +191,7 @@ footer .footer_contacto {
   text-align: center;
   width: 70%;
   border: 2px solid rgba(0, 0, 0, 0.715);
-  border-radius: 5%;
+  border-radius: 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   line-height: 1.875;
@@ -185,7 +212,7 @@ footer .footer_contacto {
   text-align: center;
   width: 70%;
   border: 2px solid rgba(0, 0, 0, 0.715);
-  border-radius: 5%;
+  border-radius: 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   line-height: 1.875;
@@ -206,7 +233,7 @@ footer .footer_contacto {
   text-align: center;
   width: 70%;
   border: 2px solid rgba(0, 0, 0, 0.715);
-  border-radius: 5%;
+  border-radius: 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   line-height: 1.875;
@@ -221,4 +248,68 @@ footer .footer_contacto {
   color: #ff0000;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+main#inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+main#inicio .intro {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
+  max-width: 1000px;
+}
+main#inicio .intro p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.875;
+  padding-left: 25px;
+  text-align: center;
+}
+main#inicio .intro img {
+  max-width: 650px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main#inicio #inicio_contacto {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px rgba(0, 0, 0, 0.716);
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+main#inicio #inicio_contacto .contacto_1 {
+  text-align: center;
+}
+main#inicio #inicio_contacto .contacto_1 a {
+  color: black;
+}
+main#inicio #inicio_contacto .contacto_1 a :hover {
+  color: #ff0000;
+}
+main#inicio #inicio_contacto .contacto_2 {
+  text-align: center;
+}
+main#inicio #inicio_contacto .contacto_2 a {
+  color: black;
+}
+main#inicio #inicio_contacto .contacto_2 a :hover {
+  color: #ff0000;
+}
+main#inicio #inicio_contacto .contacto_3 {
+  text-align: center;
+}
+main#inicio #inicio_contacto .contacto_3 a {
+  color: black;
+}
+main#inicio #inicio_contacto .contacto_3 a :hover {
+  color: #ff0000;
+}/*# sourceMappingURL=estilos.css.map */

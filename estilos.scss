@@ -52,9 +52,9 @@ footer{
         padding-top: 10px;
         padding-bottom: 10px;
         color: rgb(196, 188, 188);
-        text-align: center;
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
+        text-align: center;
     }
     .redes{
         text-align: center;
@@ -69,7 +69,16 @@ footer{
         color: #ff0000;
     }
     .footer_contacto{
+        padding-top: 15px;
         text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        p #text{
+            justify-content: space-between;
+        }
     }
 }
 // fin footer
@@ -77,17 +86,22 @@ footer{
 #nosotros{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     margin: 20px;
     margin-top: 40px;
+
     .nosotros_intro{
         background-color: rgb(255, 255, 255);
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1000px;
         box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
     }
     .nosotros_intro h2{
+        margin-top: 40px;
         padding: 10px;
         letter-spacing: 4px;
         text-align: center;
@@ -100,27 +114,35 @@ footer{
         font-family: 'Roboto', sans-serif;
         line-height: 1.875;
         color: rgb(0, 0, 0);
+        max-width: 750px;
         margin: 20px;
     }
     .nosotros_intro img{
-        width: 60%;
+        max-width: 35%;
         padding-top: 20px;
         padding-bottom: 25px;
+        margin-bottom: 40px;
     }
 }
-// fin del inicio
+// fin de nosotros
 // inicio de servicios
 #servicios{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     margin: 20px;
     margin-top: 40px;
     .servicios_lista{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
         background-color: rgb(255, 255, 255);
         box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
         text-align: center;
         h2{
+            margin-top: 40px;
             text-align: center;
             font-family: 'Roboto', sans-serif;
             letter-spacing: 4px;
@@ -134,21 +156,27 @@ footer{
             margin-bottom: 15px;
             line-height: 1.5;
         }
-        ul {
+        ul{
             list-style-position: inside;
             text-align: start;
+            float: inline-start;
             padding-inline-start: 30px;
         }
         li{
             font-family: 'Roboto', sans-serif;
-            letter-spacing: 2px;
+            min-width: 960px;
+            letter-spacing: 1.5px;
             line-height: 1.875;
+            padding: 0 15px 0 15px;
             margin: 5px;
         }
+        #last_li{
+            margin-bottom: 40px;
+        }
         img{
-            width: 85%;
-            padding-top: 15px;
-            padding-bottom: 20px;
+            width: 35%;
+            padding-top: 20px;
+            padding-bottom: 25px;
         }
     }
 }
@@ -167,7 +195,7 @@ footer{
         text-align: center;
         width: 70%;
         border: 2px solid rgba(0, 0, 0, 0.715);
-        border-radius: 5%;
+        border-radius: 20px;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 2px;
         line-height: 1.875;
@@ -188,7 +216,7 @@ footer{
         text-align: center;
         width: 70%;
         border: 2px solid rgba(0, 0, 0, 0.715);
-        border-radius: 5%;
+        border-radius: 20px;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 2px;
         line-height: 1.875;
@@ -209,7 +237,7 @@ footer{
         text-align: center;
         width: 70%;
         border: 2px solid rgba(0, 0, 0, 0.715);
-        border-radius: 5%;
+        border-radius: 20px;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 2px;
         line-height: 1.875;
@@ -221,6 +249,73 @@ footer{
         }
         a :hover{
             color: #ff0000;
+        }
+    }
+}
+//Fin de contacto
+//Inicio de index
+main#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    .intro{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 8px 15px 8px rgb(221, 221, 221);
+        max-width: 1000px;    
+    }
+    .intro p{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.5px;
+        line-height: 1.875;
+        padding-left: 25px;
+        text-align: center;
+    }
+    .intro img{
+        max-width: 650px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #inicio_contacto{
+        display: flex;
+        flex-direction: row;
+        border: solid 2px rgba(0, 0, 0, 0.716);
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 40px;
+        .contacto_1{
+            text-align: center;
+            a{
+                color: black;
+            }
+            a :hover{
+                color: #ff0000;
+            }
+        }
+        .contacto_2{
+            text-align: center;
+            a{
+                color: black;
+            }
+            a :hover{
+                color: #ff0000;
+            }
+        }
+        .contacto_3{
+            text-align: center;
+            a{
+                color: black;
+            }
+            a :hover{
+                color: #ff0000;
+            }
         }
     }
 }

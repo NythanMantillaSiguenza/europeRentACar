@@ -267,6 +267,7 @@ main#inicio .intro {
   max-width: 1000px;
 }
 main#inicio .intro p {
+  padding-top: 40px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.5px;
   line-height: 1.875;
